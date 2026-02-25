@@ -25,15 +25,6 @@ smolvla_standalone/
 │   ├── custom_task.sh          # Custom task examples
 │   └── use_finetuned_model.sh  # Finetuned model usage
 │
-├── docs/                        # Documentation
-│   ├── QUICKSTART.md           # 5-minute quick start
-│   ├── MAIN_SCRIPT_GUIDE.md    # Complete reference
-│   ├── MPS_GUIDE.md            # Mac GPU setup
-│   ├── PRETRAINED_MODEL_USAGE.md
-│   ├── HOW_TO_USE_PRETRAINED.md
-│   ├── TIMEOUT_CONTROL_GUIDE.md
-│   └── FILE_INDEX.md           # File navigation guide
-│
 ├── config/                      # Configuration files
 │   ├── smolvla_omy.yaml        # SmolVLA config
 │   └── pi0_omy.yaml            # Pi0 config
