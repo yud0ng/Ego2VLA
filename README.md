@@ -298,16 +298,6 @@ python run_smolvla.py --model lerobot/smolvla_base --pretrain
 python run_smolvla.py --model ../smolvla_model
 ```
 
-## 💡 Tips & Best Practices
-
-1. **Start with pretrained** - No model setup needed
-2. **Use examples first** - They work out of the box
-3. **Check GPU** - See `docs/MPS_GUIDE.md` for Mac
-4. **Increase timeout** - If episodes timeout frequently
-5. **Use logs** - Results saved in `examples/logs/`
-6. **Multiple runs** - Use different `--seed` for reproducibility
-7. **Read docs** - Comprehensive guides in `docs/`
-
 ## 🔄 Updating
 
 To update the package:
@@ -320,21 +310,6 @@ git pull
 source venv/bin/activate
 pip install -r requirements.txt --upgrade
 ```
-
-## 📚 Additional Resources
-
-### Documentation
-- **Quick Start**: `docs/QUICKSTART.md`
-- **Complete Guide**: `docs/MAIN_SCRIPT_GUIDE.md`
-- **Examples Guide**: `examples/README.md`
-- **Mac GPU Setup**: `docs/MPS_GUIDE.md`
-- **File Navigation**: `docs/FILE_INDEX.md`
-
-### Example Scripts
-- **Quick Test**: `examples/quick_test.sh`
-- **Batch Experiments**: `examples/batch_experiments.sh`
-- **Custom Tasks**: `examples/custom_task.sh`
-- **Finetuned Model**: `examples/use_finetuned_model.sh`
 
 ### Help Commands
 ```bash
@@ -350,17 +325,6 @@ cd examples && cat README.md
 # Check GPU
 python3 -c "import torch; print('Device:', 'CUDA' if torch.cuda.is_available() else 'MPS' if torch.backends.mps.is_available() else 'CPU')"
 ```
-
-## ✅ Verification Checklist
-
-Before running experiments, verify:
-
-- [ ] Python 3.8+ installed
-- [ ] Virtual environment created (`venv/`)
-- [ ] Dependencies installed (`pip list`)
-- [ ] GPU detected (or willing to use CPU)
-- [ ] Read `docs/QUICKSTART.md`
-- [ ] Ran `./setup.sh` successfully
 
 ## 🎯 Next Steps
 
@@ -381,44 +345,3 @@ cd examples && ./quick_test.sh
 cd examples && cat README.md
 ```
 
-## 📞 Support
-
-For issues or questions:
-
-1. Check `docs/QUICKSTART.md` - Troubleshooting section
-2. Check `docs/MAIN_SCRIPT_GUIDE.md` - Detailed guide
-3. Review `examples/README.md` - Example usage
-4. Check error messages in terminal
-5. Review logs in `examples/logs/`
-
-## 📝 Version Information
-
-- **Version**: 2.0
-- **Last Updated**: 2026-02-25
-- **Status**: Production Ready ✅
-
-## 🌟 Features
-
-- ✅ Complete standalone package
-- ✅ Automated setup script
-- ✅ GPU acceleration (CUDA/MPS)
-- ✅ Pretrained model support
-- ✅ Finetuned model support
-- ✅ Custom task instructions
-- ✅ Timeout control
-- ✅ Batch experiments
-- ✅ Comprehensive documentation
-- ✅ Example scripts
-- ✅ Full CLI with argparse
-
----
-
-**Ready to start?** Run `./setup.sh` and then `examples/quick_test.sh`!
-
-**Questions?** Read `docs/QUICKSTART.md` for a 5-minute guide.
-
-**Need help?** Check `docs/MAIN_SCRIPT_GUIDE.md` for complete reference.
-
----
-
-*Built with ❤️ for robotics research*
